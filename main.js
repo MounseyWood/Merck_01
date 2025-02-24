@@ -10,25 +10,23 @@ let loaded = false;
 let loadCounter = 0;
 
 // Initialize images for layers
-const background = new Image();
-const didot = new Image();
-const shadow = new Image();
-const man = new Image();
-const headlines = new Image();
-const title = new Image();
+const wall = new Image();
+const rug = new Image();
+const pendent = new Image();
+const coffee_table = new Image();
+const poof = new Image();
+const sofa = new Image();
 const frame = new Image();
-const gloss = new Image();
 
 // Create a list of layer objects
 const layerList = [
-  { image: background, src: './images/layer_1_1.png', zIndex: -5, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
-  { image: didot, src: './images/layer_2_1.png', zIndex: -4, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
-  { image: shadow, src: './images/layer_3_1.png', zIndex: -3, position: { x: 0, y: 0 }, blend: 'multiply', opacity: 0.5 },
-  { image: man, src: './images/layer_4_1.png', zIndex: -2, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
-  { image: headlines, src: './images/layer_5_1.png', zIndex: -0.5, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
-  { image: title, src: './images/layer_6_1.png', zIndex: -0.5, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
-  { image: frame, src: './images/layer_7_1.png', zIndex: 0, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
-  { image: gloss, src: './images/layer_8_1.png', zIndex: 0.5, position: { x: 0, y: 0 }, blend: 0, opacity: 1 }
+  { image: wall, src: './images/layer_1_wall.png', zIndex: -5, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
+  { image: rug, src: './images/layer_2_rug.png', zIndex: -4, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
+  { image: pendent, src: './images/layer_3_pendent.png', zIndex: -3, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
+  { image: coffee_table, src: './images/layer_4_coffee_table.png', zIndex: -2, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
+  { image: poof, src: './images/layer_5_poof.png', zIndex: -0.5, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
+  { image: sofa, src: './images/layer_6_sofa.png', zIndex: -0.5, position: { x: 0, y: 0 }, blend: 0, opacity: 1 },
+  { image: frame, src: './images/layer_7_frame.png', zIndex: 0, position: { x: 0, y: 0 }, blend: 0, opacity: 1 }
 ];
 
 layerList.forEach((layer) => {
